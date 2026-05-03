@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Central de Atendimento Rick and Morty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Central de Atendimento Intergaláctica</h1>
+    
+    <div class="controles">
+        <button onclick="adicionarPersonagem()">Adicionar à Fila</button>
+        <button onclick="atenderPersonagem()">Atender Próximo</button>
+    </div>
+
+    <main>
+        <section id="atendimento-atual">
+            <h2>Em Atendimento</h2>
+            <div id="card-atendimento">
+                <p>Ninguém sendo atendido no momento.</p>
+            </div>
+        </section>
+
+        <section id="sala-espera">
+            <h2>Sala de Espera (Fila)</h2>
+            <div id="lista-fila"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
